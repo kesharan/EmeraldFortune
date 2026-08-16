@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" data-variant="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emerald Fortune - Saint Patrick's Day Slot Machine</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="assets/images/emerald.png" type="image/x-icon">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-content">
+        <h1 class="title">
+          <span class="shamrock">🍀</span>
+          Emerald Fortune
+          <span class="shamrock">🍀</span>
+        </h1>
+        <p class="subtitle">Luck of the Irish Awaits</p>
+      </div>
+    </header>
+
+    <!-- Main Game Area -->
+    <main class="game-wrapper">
+      <!-- Slot Machine -->
+      <div class="slot-machine">
+        <div class="machine-frame">
+          <!-- Reels Container -->
+          <div class="reels-container">
+            <div class="reel" id="reel1">
+              <div class="reel-symbol">🍀</div>
+              <div class="reel-symbol">🪙</div>
+              <div class="reel-symbol">🌈</div>
+              <div class="reel-symbol">🏆</div>
+              <div class="reel-symbol">🎩</div>
+              <div class="reel-symbol">💎</div>
+              <div class="reel-symbol">⭐</div>
+              <div class="reel-symbol">🍀</div>
+              <div class="reel-symbol">🪙</div>
+              <div class="reel-symbol">🌈</div>
+            </div>
+
+            <div class="reel" id="reel2">
+              <div class="reel-symbol">🪙</div>
+              <div class="reel-symbol">🌈</div>
+              <div class="reel-symbol">🏆</div>
+              <div class="reel-symbol">🎩</div>
+              <div class="reel-symbol">💎</div>
+              <div class="reel-symbol">⭐</div>
+              <div class="reel-symbol">🍀</div>
+              <div class="reel-symbol">🪙</div>
+              <div class="reel-symbol">🌈</div>
+              <div class="reel-symbol">🏆</div>
+            </div>
+
+            <div class="reel" id="reel3">
+              <div class="reel-symbol">🌈</div>
+              <div class="reel-symbol">🏆</div>
+              <div class="reel-symbol">🎩</div>
+              <div class="reel-symbol">💎</div>
+              <div class="reel-symbol">⭐</div>
+              <div class="reel-symbol">🍀</div>
+              <div class="reel-symbol">🪙</div>
+              <div class="reel-symbol">🌈</div>
+              <div class="reel-symbol">🏆</div>
+              <div class="reel-symbol">🎩</div>
+            </div>
+          </div>
+
+          <!-- Payline -->
+          <div class="payline"></div>
+        </div>
+      </div>
+
+      <!-- Game Stats -->
+      <div class="stats-panel">
+        <div class="stat">
+          <span class="stat-label">Balance</span>
+          <span class="stat-value" id="balance">1000</span>
+          <span class="stat-unit">Credits</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Bet</span>
+          <span class="stat-value" id="bet">50</span>
+          <span class="stat-unit">Credits</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Win</span>
+          <span class="stat-value" id="win">0</span>
+          <span class="stat-unit">Credits</span>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <div class="controls">
+        <!-- Bet Controls -->
+        <div class="bet-controls">
+          <button class="btn btn-secondary" id="decrease-bet">− Bet</button>
+          <div class="bet-display">
+            <input type="range" id="bet-slider" min="10" max="100" value="50" step="10">
+            <span id="bet-amount">50</span>
+          </div>
+          <button class="btn btn-secondary" id="increase-bet">+ Bet</button>
+        </div>
+
+        <!-- Main Spin Button -->
+        <button class="btn btn-spin" id="spin-btn">SPIN</button>
+
+        <!-- Reset Button -->
+        <button class="btn btn-secondary" id="reset-btn">New Game</button>
+      </div>
+
+      <!-- Win Message -->
+      <div class="win-message" id="win-message"></div>
+    </main>
+
+    <!-- Particle Container -->
+    <div class="particles-container" id="particles"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
